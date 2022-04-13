@@ -1,6 +1,7 @@
-### Hi there 👋
+Hello, I am a backend developer using Java and Spring framework. I love solving problems, learning and growing.
 
 <!--
+### Hi there 👋
 **greenkey20/greenkey20** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
