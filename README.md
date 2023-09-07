@@ -1,11 +1,10 @@
-### Hi, I am Eunyoung 👋
+# Hi, I am Eunyoung 👋
 
 I am a backend developer using Java and Spring framework.<br>
 I love solving problems and processing data.<br>
 I am learning and growing every day, in order to become a more capable, persevering engineer.
 
-**🍀 My development tools**
-<br>
+## 🍀 My development tools
  - Language: ![Static Badge](https://img.shields.io/badge/Java-007396?style=flat&logo=Java&logoColor=white)
  - Framework:
 ![Static Badge](https://img.shields.io/badge/Spring%20Boot-%236DB33F?style=flat&logo=Spring%20Boot&logoColor=white)
@@ -37,15 +36,15 @@ I am learning and growing every day, in order to become a more capable, persever
 ![Static Badge](https://img.shields.io/badge/jQuery-%230769AD?style=flat&logo=jQuery&logoColor=white)
 ![Static Badge](https://img.shields.io/badge/JSP-007396?style=flat&logo=JSP&logoColor=white)
 
-**📗 I’m currently working on ...**
+## 📗 I’m currently working on ...
  - testing and refactoring <a href="https://github.com/greenkey20/knou-key-project" target="_blank">Alloc</a>
  - <a href="https://github.com/greenkey20/algorithm" target="_blank">algorithm problem-solving exercises</a>
 
-**🌱 I’m currently learning ...**
+## 🌱 I’m currently learning ...
  - Spring MVC
  - Network
 
-**✉️ How to reach me**
+## ✉️ How to reach me
  - Email: greenkey20dev@gmail.com
  - CV: <a href="https://bit.ly/45GuBbo" target="_blank">bit.ly/45GuBbo</a>
  - Blog: <a href="https://greenkey20dev.tistory.com" target="_blank">greenkey20dev.tistory.com</a>
