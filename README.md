@@ -38,8 +38,8 @@ I am learning and growing every day, in order to become a more capable, persever
 ![Static Badge](https://img.shields.io/badge/JSP-007396?style=flat&logo=JSP&logoColor=white)
 
 **📗 I’m currently working on ...**
- - testing and refactoring [Alloc](https://github.com/greenkey20/knou-key-project)
- - [algorithm problem-solving exercises](https://github.com/greenkey20/algorithm)
+ - testing and refactoring <a href="https://github.com/greenkey20/knou-key-project" target="_blank">Alloc</a>
+ - <a href="https://github.com/greenkey20/algorithm" target="_blank">algorithm problem-solving exercises</a>
 
 **🌱 I’m currently learning ...**
  - Spring MVC
@@ -47,8 +47,8 @@ I am learning and growing every day, in order to become a more capable, persever
 
 **✉️ How to reach me**
  - Email: greenkey20dev@gmail.com
- - CV: https://bit.ly/45GuBbo
- - Blog: https://greenkey20dev.tistory.com
+ - CV: <a href="https://bit.ly/45GuBbo" target="_blank">bit.ly/45GuBbo</a>
+ - Blog: <a href="https://greenkey20dev.tistory.com" target="_blank">greenkey20dev.tistory.com</a>
 
 [![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=greenkey20)](https://solved.ac/greenkey20)
 
