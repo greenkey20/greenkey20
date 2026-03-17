@@ -46,7 +46,7 @@ I am learning and growing every day, in order to become a more capable, persever
 
 ## ✉️ How to reach me
  - Email: greenkey20dev@gmail.com
- - CV: <a href="https://bit.ly/45GuBbo" target="_blank">bit.ly/45GuBbo</a>
+ - CV: <a href="https://greenkey20.notion.site/eunyoung-kang" target="_blank">Notion page</a>
  - Blog: <a href="https://greenkey20dev.tistory.com" target="_blank">greenkey20dev.tistory.com</a>
 
 [![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=greenkey20)](https://solved.ac/greenkey20)
