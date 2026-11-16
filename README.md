@@ -5,10 +5,11 @@
 
 ## 💼 What I do
 
-- **금융 SI/솔루션 백엔드 개발**
-  - Java · Spring Boot · PostgreSQL 기반 백엔드 개발 (2년)
-  - Proframe(C) 기반 고객사 계정계 개발, Oracle (1년)
+- **금융 SI/솔루션 백엔드 개발 (만 3년 차)**
+  - Java · Spring Boot · PostgreSQL 기반 은행 거래 웹앱(`KTS`, `CLS`) 백엔드 개발 (2년)
+  - Proframe(C) · Oracle 기반 고객사 계정계 개발 (1년)
 - 회사 밖에서는 개인 프로젝트로 인증, DB 마이그레이션, 컨테이너, 배포까지 혼자 설계하고 운영해 봅니다.
+- 2022년부터 개인 Notion에 학습·트러블슈팅 **TIL 1,000건 이상**을 꾸준히 기록하고 있습니다.
 
 ## 🚀 Projects
 
@@ -16,10 +17,11 @@
 `Java 21` `Spring Boot 3.5` `Spring Security` `JPA` `PostgreSQL` `Flyway` `Redis` `Docker Compose` `React`
 
 개발자의 일상·감각·통찰을 구조화해서 기록하고, AI로 패턴을 분석하는 멀티 유저 웹 서비스입니다.
-- **JWT 인증/인가**: Spring Security + jjwt, BCrypt 해시, 사용자별 데이터 완전 격리(users 테이블 + FK)
-- **DB 마이그레이션 운영 규칙**: Flyway로 스키마 변화를 관리. 커밋된 migration은 수정·삭제하지 않고 새 버전으로 고치는 원칙을 세워 운영 DB와 어긋나지 않게 관리
+- **헥사고날 아키텍처(Ports & Adapters)** 로 도메인(`auth`, `log`, `ai`, `weeklyreport`)과 외부 기술(JPA·OpenAI·Redis)을 분리
+- **JWT 인증/인가**: Spring Security + jjwt, BCrypt 해시, 사용자별 데이터 완전 격리(`users` 테이블 + FK)
+- **DB 마이그레이션 운영 규칙**: Flyway(V1~V10)로 스키마 변화를 관리. 커밋된 migration은 수정·삭제하지 않고 새 버전으로 고치는 원칙을 세워 운영 DB와 어긋나지 않게 관리
 - **PostgreSQL JSONB**로 모드별(Daily/Sensory/Insight) 데이터 스키마를 분리하고 V5/V6 마이그레이션으로 이전
-- **Redis**로 AI 질문 이력을 TTL 30일로 관리해 반복 방지, **`@Scheduled`** 주간 리포트 자동 생성
+- **Redis**로 AI 질문 이력을 TTL 30일로 관리해 반복 방지, **`@Scheduled`** 주간 리포트 자동 생성(멱등성 보장)
 - **Spring AI**로 OpenAI를 연동하고, 저장 전 분석은 Stateless API로 분리
 - Docker Compose(PostgreSQL · Redis · Nginx)로 개발·운영 환경 구성
 
@@ -30,7 +32,7 @@
 - 로그인(scrypt 해시, 실패 5회 잠금), 로그인 유지 토큰(DB에는 해시만 저장), 초대 코드 가입, 사용자별 서버 저장
 - 앱 시작 시 순서대로 적용되는 SQL 마이그레이션 (`migrations/*.sql`)
 - Oracle Cloud VM + systemd + Cloudflare 터널(HTTPS) 배포 및 운영
-- 부트캠프(ICT 혁신 스퀘어 Voice-AI) 개인 프로젝트로 36시간 안에 개발해 발표
+- ICT 혁신 스퀘어 Voice-AI 부트캠프 개인 프로젝트로 36시간 안에 개발·발표하여 **최우수상 수상**
 
 ### 🤖 LLM · RAG 학습 (모두의연구소 LLM 5기)
 LangChain RAG 파이프라인, RAG 평가 지표, Text-to-SQL 기반 ETF 추천 챗봇, LangGraph 에이전트(Adaptive/Self/CRAG), 10-K 보고서 문서 파싱 RAG를 구현했습니다. (과제 저장소는 비공개)
@@ -75,12 +77,11 @@ LangChain RAG 파이프라인, RAG 평가 지표, Text-to-SQL 기반 ETF 추천 
 ![Static Badge](https://img.shields.io/badge/JSP-007396?style=flat&logo=JSP&logoColor=white)
 
 ## 📗 Also on GitHub
- - <a href="https://github.com/greenkey20/knou-key-project" target="_blank">Alloc</a>: 테스트 및 리팩토링
+ - <a href="https://github.com/greenkey20/knou-key-project" target="_blank">Alloc</a>: 테스트 및 리팩토링 (방송대 소프트웨어 경진대회 은상)
  - <a href="https://github.com/greenkey20/algorithm" target="_blank">algorithm</a>: 알고리즘 문제 풀이
 
 ## ✉️ How to reach me
  - Email: greenkey20dev@gmail.com
  - CV: <a href="https://greenkey20.notion.site/eunyoung-kang" target="_blank">Notion page</a>
- - Blog: <a href="https://greenkey20dev.tistory.com" target="_blank">greenkey20dev.tistory.com</a>
 
-[![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=greenkey20)](https://solved.ac/greenkey20)
+[![Solved.ac프로필](https://mazassumnida.wtf/api/v2/generate_badge?boj=greenkey20)](https://solved.ac/greenkey20)
