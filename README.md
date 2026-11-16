@@ -77,7 +77,7 @@ LangChain RAG 파이프라인, RAG 평가 지표, Text-to-SQL 기반 ETF 추천 
 ![Static Badge](https://img.shields.io/badge/JSP-007396?style=flat&logo=JSP&logoColor=white)
 
 ## 📗 Also on GitHub
- - <a href="https://github.com/greenkey20/knou-key-project" target="_blank">Alloc</a>: 테스트 및 리팩토링 (방송대 소프트웨어 경진대회 은상)
+ - <a href="https://github.com/greenkey20/knou-key-project" target="_blank">Alloc</a>: 테스트 및 리팩토링 (방송대 소프트웨어 경진대회 은상, 2023.8)
  - <a href="https://github.com/greenkey20/algorithm" target="_blank">algorithm</a>: 알고리즘 문제 풀이
 
 ## ✉️ How to reach me
