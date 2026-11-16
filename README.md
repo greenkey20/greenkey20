@@ -10,9 +10,10 @@
 **금융 SI/솔루션 백엔드 개발 · 자본시장사업부 (2023.11 ~ 현재)**
 
 - **Tradegene** ([국채전문유통시장 트레이딩 솔루션](http://www.tradegene.co.kr)) — `Java 17` `Spring Boot 3` `Spring Data JPA` `PostgreSQL` `Kafka` `Redis`
-  - 은행 고객사 3곳의 국채전문유통시장 솔루션 프로젝트에 참여해, 딜러용 거래 웹앱과 알고리즘 트레이딩 서버를 개발·고도화·유지보수
-  - Kafka 기반 MSA(Risk · Portfolio · Signal)에서 **Signal MSA**를 맡아, 실시간 이벤트를 받아 거래 가능 여부를 판단하는 시그널을 발행
-  - KRX 호가 전문 수신 시 초 단위 통계 데이터를 생성해 Redis/DB에 저장하고, 룰 기반 시그널 판단 로직을 구현
+  - 은행 고객사 3곳의 국채전문유통시장 솔루션 프로젝트에서 딜러용 거래 웹앱의 **알고리즘 트레이딩 백엔드**를 담당
+  - Hexagonal Architecture + CQRS 구조의 MSA에서 **알고리즘(시그널 이벤트 로그 · 룰 시그널), Risk Management, Portfolio** 서비스와 조회(Query) 서비스를 개발하고, Kafka 이벤트와 FeignClient로 서비스 간 연계
+  - **데이터 관리(커스텀) MSA를 부담당**하며, KRX 호가 전문 수신 시 **호가 초 단위 스냅샷과 통계**를 생성해 Redis/DB에 저장
+  - 룰 기반 시그널 판단 로직 구현
   - 원시 시장 데이터 전체 저장의 메모리 부담을 줄이기 위해 **Redis 윈도우 기반 이벤트 버퍼**를 설계 (메모리 사용량 약 80% 절감)
 - **CLS 결제 시스템 재구축** (2024.1 ~ 2025.4) — `C (ProFrame)` `Oracle` `JavaScript (XFrame)`
   - 20년 된 레거시 CLS 결제 시스템을 은행의 상품처리시스템 안으로 통합하고, 결제 전문 송수신·결제 대사·지준 처리 업무와 연동
