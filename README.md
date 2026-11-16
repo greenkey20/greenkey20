@@ -12,7 +12,7 @@
 - **Tradegene** ([국채전문유통시장 트레이딩 솔루션](http://www.tradegene.co.kr)) — `Java 17` `Spring Boot 3` `Spring Data JPA` `PostgreSQL` `Kafka` `Redis`
   - 은행 고객사 3곳의 국채전문유통시장 솔루션 프로젝트에서 딜러용 거래 웹앱의 **알고리즘 트레이딩 백엔드**를 담당
   - Hexagonal Architecture + CQRS 구조의 MSA에서 **알고리즘(시그널 이벤트 로그 · 룰 시그널), Risk Management, Portfolio** 서비스와 조회(Query) 서비스를 개발하고, Kafka 이벤트와 FeignClient로 서비스 간 연계
-  - **데이터 관리(커스텀) MSA를 부담당**하며, KRX 호가 전문 수신 시 **호가 초 단위 스냅샷과 통계**를 생성해 Redis/DB에 저장
+  - KRX 호가 전문 수신 시 **호가 초 단위 스냅샷과 통계**를 생성해 Redis/DB에 저장
   - 룰 기반 시그널 판단 로직 구현
   - 사내 크립토거래시스템(Tradegene-crypto, 2025.4 ~ 7)에서 Signal MSA를 맡아 실시간 이벤트로 거래 가능 여부 시그널을 발행하고, 원시 시장 데이터 전체 저장의 메모리 부담을 줄이기 위해 **Redis 윈도우 기반 이벤트 버퍼**를 설계 (메모리 사용량 약 80% 절감)
 - **CLS 결제 시스템 재구축** (2024.1 ~ 2025.4) — `C (ProFrame)` `Oracle` `JavaScript (XFrame)`
@@ -38,7 +38,7 @@
 - **판매자 정산**: 오늘의 신규 주문, 배송 상태별 건수, 정산 예정 금액을 집계하는 MyBatis/Oracle SQL을 작성하고(수수료 5% 반영), 새로고침은 AJAX로 처리했습니다. 정산 상세 목록은 페이징하고, Apache POI로 **엑셀 다운로드**를 제공합니다.
 - **공지사항**: 관리자 공지 등록·수정과 사용자 목록·상세 조회를 구현했습니다.
 
-### 🗓️ [Alloc(알록)](https://github.com/greenkey20/knou-key-project): 활동 계획 계산기 (기획·개발·배포 1인, 2023.6~8)
+### 🗓️ [Alloc(알록)](https://github.com/greenkey20/knou-key-project): 활동 계획 계산기 (기획·개발·배포 1인, 2023.7~8)
 `Java 17` `Spring Boot 3.1` `Spring Data JPA` `Spring Security` `JSP/JSTL` `jQuery` `MySQL(AWS RDS)` `AWS EC2` `GitHub Actions` `S3` `CodeDeploy`
 
 목표 기간과 분량을 입력하면 매 회 수행할 분량을 계산해 주고, 일정 저장·수행 트래킹·통계·게시판을 제공하는 웹 서비스입니다. **방송대 컴퓨터과학과 총장배 소프트웨어 경진대회 은상(2023.8)**.
@@ -69,8 +69,10 @@
 - Oracle Cloud VM + systemd + Cloudflare 터널(HTTPS) 배포 및 운영
 - ICT 이노베이션 스퀘어 Voice-AI 부트캠프 개인 프로젝트로 36시간 안에 개발·발표하여 **최우수상 수상**
 
-### 🤖 LLM · RAG 학습 (모두의연구소 LLM 5기)
-LangChain RAG 파이프라인, RAG 평가 지표, Text-to-SQL 기반 ETF 추천 챗봇, LangGraph 에이전트(Adaptive/Self/CRAG), 10-K 보고서 문서 파싱 RAG를 구현했습니다. (과제 저장소는 비공개)
+### 🤖 국채전문유통시장 접속 인프라 개선 문서 RAG (모두의 연구소 AI/LLM 서비스 개발 부트캠프, 2026.2~5, 풀스택 1인)
+`Python` `LangChain` `RAG`
+
+프롬프트 엔지니어링과 Advanced RAG를 적용해 구현했습니다. (과제 저장소는 비공개)
 
 ## 🏆 수상 · 자격
 
