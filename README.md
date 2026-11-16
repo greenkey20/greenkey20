@@ -34,6 +34,23 @@
 - Oracle Cloud VM + systemd + Cloudflare 터널(HTTPS) 배포 및 운영
 - ICT 혁신 스퀘어 Voice-AI 부트캠프 개인 프로젝트로 36시간 안에 개발·발표하여 **최우수상 수상**
 
+### 🛒 [SOSOBUTSTRONG(위메샐)](https://github.com/greenkey20/SOSOBUTSTRONG): 판매자·구매자 거래 웹 서비스 (KH정보교육원 팀 프로젝트, 2022.3~4)
+`Java` `Spring MVC` `MyBatis` `Oracle` `JSP/JSTL` `jQuery(AJAX)` `Spring Security` `Maven`
+
+구매자와 판매자가 거래하는 웹 서비스를 팀으로 개발했습니다. 저는 **문의(Q&A), 판매자 정산, 공지사항** 기능을 담당했습니다.
+- **1:1 문의/답변**: 구매자의 문의 등록·수정·삭제·검색과 판매자의 답변(첨부파일 포함)을 구현하고, 답변이 등록되면 JavaMail로 구매자에게 이메일을 발송했습니다. 답변 평점은 AJAX로 비동기 처리했습니다.
+- **주문 연동 AJAX**: 문의 작성 시 구매자의 주문 목록을 페이징 정보와 함께 JSON으로 비동기 조회하고, 주문번호 확인과 판매자명 자동완성 검색을 구현했습니다.
+- **판매자 정산**: 오늘의 신규 주문, 배송 상태별 건수, 정산 예정 금액을 집계하는 MyBatis/Oracle SQL을 작성하고(수수료 5% 반영), 새로고침은 AJAX로 처리했습니다. 정산 상세 목록은 페이징하고, Apache POI로 **엑셀 다운로드**를 제공합니다.
+- **공지사항**: 관리자 공지 등록·수정과 사용자 목록·상세 조회를 구현했습니다.
+
+### 🗓️ [Alloc(알록)](https://github.com/greenkey20/knou-key-project): 활동 계획 계산기 (기획·개발·배포 1인, 2023.6~8)
+`Java 17` `Spring Boot 3.1` `Spring Data JPA` `Spring Security` `JSP/JSTL` `jQuery` `MySQL(AWS RDS)` `AWS EC2` `GitHub Actions` `S3` `CodeDeploy`
+
+목표 기간과 분량을 입력하면 매 회 수행할 분량을 계산해 주고, 일정 저장·수행 트래킹·통계·게시판을 제공하는 웹 서비스입니다. **방송대 소프트웨어 경진대회 은상(2023.8)**.
+- Spring Boot + JSP/JSTL + jQuery로 화면과 API를 모두 개발하고 Tomcat(WAR)으로 배포
+- GitHub Actions로 빌드 후 S3에 올리고 CodeDeploy로 EC2에 배포하는 **CI/CD 파이프라인** 구성
+- **OpenAI(ChatGPT) API 연동**: RestTemplate으로 Chat Completions API를 호출해, 구조화된 프롬프트에 따라 공부 계획을 생성하고 응답을 저장
+
 ### 🤖 LLM · RAG 학습 (모두의연구소 LLM 5기)
 LangChain RAG 파이프라인, RAG 평가 지표, Text-to-SQL 기반 ETF 추천 챗봇, LangGraph 에이전트(Adaptive/Self/CRAG), 10-K 보고서 문서 파싱 RAG를 구현했습니다. (과제 저장소는 비공개)
 
@@ -44,6 +61,7 @@ LangChain RAG 파이프라인, RAG 평가 지표, Text-to-SQL 기반 ETF 추천 
 ![Static Badge](https://img.shields.io/badge/Spring%20Boot-%236DB33F?style=flat&logo=Spring%20Boot&logoColor=white)
 ![Static Badge](https://img.shields.io/badge/Spring-%236DB33F?style=flat&logo=Spring&logoColor=white)
 ![Static Badge](https://img.shields.io/badge/Spring%20Security-%236DB33F?style=flat&logo=Spring%20Security&logoColor=white)
+![Static Badge](https://img.shields.io/badge/MyBatis-%23000000?style=flat&logoColor=white)
  - Database: 
 ![Static Badge](https://img.shields.io/badge/PostgreSQL-%234169E1?style=flat&logo=PostgreSQL&logoColor=white)
 ![Static Badge](https://img.shields.io/badge/MySQL-%234479A1?style=flat&logo=MySQL&logoColor=white)
@@ -77,8 +95,8 @@ LangChain RAG 파이프라인, RAG 평가 지표, Text-to-SQL 기반 ETF 추천 
 ![Static Badge](https://img.shields.io/badge/JSP-007396?style=flat&logo=JSP&logoColor=white)
 
 ## 📗 Also on GitHub
- - <a href="https://github.com/greenkey20/knou-key-project" target="_blank">Alloc</a>: 테스트 및 리팩토링 (방송대 소프트웨어 경진대회 은상, 2023.8)
  - <a href="https://github.com/greenkey20/algorithm" target="_blank">algorithm</a>: 알고리즘 문제 풀이
+ - <a href="https://github.com/greenkey20/spring-workspace" target="_blank">spring-workspace</a>: Spring MVC·AJAX 학습 코드
 
 ## ✉️ How to reach me
  - Email: greenkey20dev@gmail.com
